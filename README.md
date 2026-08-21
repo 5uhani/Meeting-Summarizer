@@ -1,24 +1,24 @@
-# Meeting Summarizer 🎙️✨
+# Meeting Summarizer
 
 Meeting Summarizer is a modern, full-stack web application designed to automatically transcribe meeting audio recordings and extract structured, actionable insights. By leveraging **Deepgram's Nova-2** model for lightning-fast speech-to-text conversion and **Google Gemini** for intelligent linguistic analysis, the platform transforms raw conversation into an executive summary, concrete decisions, and key action items instantly.
 
 ---
 
-## 🚀 Features
+## Features
 
 * **Seamless Audio Processing:** Drag-and-drop or browse to upload `.wav`, `.mp3`, or `.m4a` files with instant frontend extension validation.
 * **High-Fidelity Transcription:** Uses Deepgram's native REST orchestration for accurate word-for-word transcripts with smart formatting (automatic punctuation and paragraph structures).
 * **AI-Driven Analytics:** Automated breakdown of transcripts into structured blocks:
-    * 📘 **Executive Summary:** A high-level overview of the discussion.
-    * 🟢 **Action Items:** Explicitly assigned tasks with designated owners.
-    * 🟣 **Key Decisions:** Critical conclusions reached during the session.
+    *  **Executive Summary:** A high-level overview of the discussion.
+    *  **Action Items:** Explicitly assigned tasks with designated owners.
+    *  **Key Decisions:** Critical conclusions reached during the session.
 * **Intelligent Fallback Engine:** A local, rule-based keyword extraction system handles text processing seamlessly if external LLM APIs hit rate limits or quota caps.
 * **Dynamic Response Compatibility:** The API provides dual-casing mappings (both `camelCase` and `snake_case`) to ensure native compatibility with varied frontend implementations.
 * **Modern Responsive Dashboard:** A tailored interface featuring colored data cards, micro-animations, and an interactive, collapsible monospace transcript viewer.
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 ### Frontend
 * **Framework:** React 19.2.7
@@ -38,7 +38,7 @@ Meeting Summarizer is a modern, full-stack web application designed to automatic
 
 ---
 
-## 📂 Project Architecture & File Structure
+##  Project Architecture & File Structure
 
 ```text
 meeting-summarizer-workspace/
@@ -69,7 +69,7 @@ meeting-summarizer-workspace/
 
 ---
 
-## 🔌 API Documentation
+##  API Documentation
 
 ### **POST** `/api/summarize`
 
@@ -108,7 +108,7 @@ Processes a binary or multi-part meeting audio recording, translates the file in
 
 ---
 
-## ⚙️ Setup & Installation
+##  Setup & Installation
 
 ### Prerequisites
 
@@ -170,7 +170,7 @@ The interface will be accessible via your browser at `http://localhost:5173`.
 
 ---
 
-## 🔄 Core Engineering Protocols
+##  Core Engineering Protocols
 
 ### System Data Flow
 
@@ -211,7 +211,7 @@ To circumvent standard sandbox API limits or potential third-party network outag
 
 ---
 
-## 🎯 Usage Guide
+##  Usage Guide
 
 ### Step 1: Start the Backend
 ```bash
@@ -235,7 +235,7 @@ npm run dev
 
 ---
 
-## 🔧 Development
+##  Development
 
 ### Building for Production
 
@@ -261,7 +261,7 @@ npm run lint     # Run ESLint checks
 
 ---
 
-## 📋 Environment Variables
+##  Environment Variables
 
 Create a `.env` file in `summarizer-backend/` with:
 
@@ -273,11 +273,11 @@ DEEPGRAM_API_KEY=your_api_key_here
 GEMINI_API_KEY=your_api_key_here
 ```
 
-> **⚠️ Security Note:** Never commit `.env` files to version control. Add `.env` to your `.gitignore`.
+> ** Security Note:** Never commit `.env` files to version control. Add `.env` to your `.gitignore`.
 
 ---
 
-## 🚦 Supported Audio Formats
+##  Supported Audio Formats
 
 - `.wav` (Waveform Audio File Format)
 - `.mp3` (MPEG Audio)
@@ -287,7 +287,7 @@ All formats are validated server-side before processing.
 
 ---
 
-## ⚡ Performance & Optimization
+##  Performance & Optimization
 
 - **Frontend:** Vite provides fast HMR for rapid development iteration
 - **Backend:** Uvicorn async server handles concurrent requests efficiently
@@ -297,7 +297,7 @@ All formats are validated server-side before processing.
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Backend Won't Start
 - Verify Python 3.10+ is installed: `python --version`
@@ -322,16 +322,3 @@ All formats are validated server-side before processing.
 
 ---
 
-## 📝 License
-
-This application is distributed as open-source software under the **MIT License**.
-
----
-
-## 👥 Support & Contribution
-
-For issues, questions, or contributions, please open an issue or submit a pull request.
-
----
-
-**Built with ❤️ for productive meetings**
